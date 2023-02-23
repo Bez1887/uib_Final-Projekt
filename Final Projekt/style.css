@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Oleo+Script:wght@700&family=Pacifico&display=swap");
+font-family: "Marck Script", cursive;
+font-family: "Oleo Script", cursive;
+font-family: "Pacifico", cursive;
+
+body {
+  background-color: #20232a;
+}
+/* Nav Bar Bereich */
+.nav-bar {
+  background-color: #31326f;
+  height: 8vh;
+  position: sticky;
+  top: 0;
+  z-index: 800;
+
+  box-shadow: -1px 0px 15px 10px rgb(0 0 0 / 25%);
+}
+
+ul {
+  width: 100%;
+  height: 8vh;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+li a {
+  font-family: "Oleo Script";
+}
+
+.nav-link {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: white;
+  border: 0;
+  border-radius: 5px 5px 5px 5px;
+  text-decoration: none;
+  align-self: center;
+}
+
+.nav-link:hover {
+  color: #31326f;
+  cursor: pointer;
+  background-color: #9ddfd3;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+}
+
+.bez img {
+  width: 50px;
+  border-radius: 18px;
+}
+
+.bez {
+  position: relative;
+  right: 115px;
+}
+/* Nav Bar Bereich Ende*/
+
+/* Ich Bereich */
+
+.big {
+  font-size: 45px;
+  color: black;
+  letter-spacing: normal;
+}
+
+p {
+  font-size: 25px;
+}
+p b {
+  color: #fff;
+  background-color: #404040;
+  font-size: 32px;
+}
+
+.dci {
+  text-decoration: none;
+}
+
+main {
+  height: 60vh;
+  background-image: url(./IMG´s/web-development_2.jpg);
+  background-size: cover;
+}
+
+.centered {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 950px;
+  height: fit-content;
+  bottom: 90px;
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 1rem;
+  border-radius: 100px;
+  overflow: hidden;
+  border: solid black 7px;
+  box-shadow: 26px 2px 30px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 26px 2px 30px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 26px 2px 30px rgba(0, 0, 0, 1);
+}
+h1 {
+  margin-bottom: 115px;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Pacifico", cursive;
+  color: gainsboro;
+  justify-content: center;
+  font-size: 55px;
+}
+.neu {
+  width: 100%;
+  height: fit-content;
+}
+.brokoo {
+  width: 100px;
+  position: absolute;
+  right: 60px;
+  border-radius: 35px;
+  top: 145px;
+}
+/* Ich Bereich Ende*/
+
+/* Bereich Skills */
+
+.skills {
+  font-family: sans-serif;
+  color: aliceblue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./IMG´s/shahadat-rahman-O2MdroNurVw-unsplash.jpg);
+  background-size: cover;
+}
+
+.container1 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 100px;
+}
+
+.cards {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 85px 35px #000;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  background-color: #181818;
+  transition: all 0.3s ease-in-out;
+  margin-left: -10px;
+  top: 40px;
+  bottom: 40px;
+}
+
+.cards:hover {
+  transform: translateY(-20px);
+  transition: all 0.4s ease-out;
+}
+
+.cards:hover ~ .cards {
+  position: relative;
+  left: 50px;
+  transition: all 0.4s ease-out;
+}
+
+.symbol {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-out;
+  letter-spacing: 9px;
+}
+.symbol i {
+  font-size: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.cards:hover > .html i {
+  color: #bb3720;
+}
+
+.cards:hover > .css i {
+  color: #018ccc;
+}
+
+.cards:hover > .js i {
+  color: yellow;
+}
+
+.cards:hover > .git i {
+  color: #f00101;
+}
+.cards:hover > .bootstrap i {
+  color: lightgreen;
+}
+.cards:hover > .react i {
+  color: darkorange;
+}
+
+.bar {
+  width: 90%;
+  height: 10px;
+  background-color: #bb3720;
+  margin: 0 auto;
+}
+
+.progress {
+  margin-top: 60px;
+}
+.stroke {
+  stroke: aliceblue;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.9s ease-out;
+}
+
+svg {
+  stroke-width: 9px;
+}
+.cards:hover .stroke-html {
+  stroke-dashoffset: 80;
+  stroke: #bb3720;
+}
+.cards:hover .stroke-css {
+  stroke-dashoffset: 70;
+  stroke: #018ccc;
+}
+
+.cards:hover .stroke-git {
+  stroke-dashoffset: 200;
+  stroke: #f00101;
+}
+
+.cards:hover .stroke-bootstrap {
+  stroke-dashoffset: 250;
+  stroke: #31326f;
+}
+
+.cards:hover .stroke-react {
+  stroke-dashoffset: 300;
+  stroke: greenyellow;
+}
+.cards:hover .stroke-js {
+  stroke-dashoffset: 340;
+  stroke: yellow;
+}
+
+/* Bereich FOOTER */
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100%;
+  background: goldenrod;
+}
+
+#contacts > h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.3rem;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#contact-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.social-link,
+#profile-link {
+  padding: 5px;
+  transition: all 300ms ease-out;
+}
+
+.social-link:hover,
+#profile-link:hover {
+  transform: translateY(-7px);
+}
+
+#contact-links {
+  margin-bottom: 30px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#footer {
+  background: antiquewhite;
+  display: flex;
+  justify-content: center;
+  color: darkgreen;
+  font-size: 32px;
+}
+
+.iconunten {
+  position: relative;
+  width: 40px;
+  border-radius: 29px;
+  left: 10px;
+}
+/* Ende FOOTER */
